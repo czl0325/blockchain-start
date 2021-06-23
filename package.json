@@ -1,0 +1,29 @@
+{
+  "name": "blockchain-start",
+  "version": "1.0.0",
+  "description": "区块链入门练习",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/czl0325/blockchain-start.git"
+  },
+  "keywords": [
+    "blockchain"
+  ],
+  "author": "czl0325",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/czl0325/blockchain-start/issues"
+  },
+  "homepage": "https://github.com/czl0325/blockchain-start#readme",
+  "dependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+
+  }
+}
