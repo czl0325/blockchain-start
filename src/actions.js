@@ -6,7 +6,9 @@ blockchain.generateNewBlock()
 
 
 function actions(vorpal) {
-  vorpal.use(mineCommand).delimiter('区块链 => ')
+  vorpal
+    .use(mineCommand).use(blockchainCommand)
+    .delimiter('区块链 => ')
     .show()
 }
 
@@ -25,6 +27,10 @@ function mineCommand(vorpal) {
         callback()
       }
     })
+}
+
+function blockchainCommand() {
+
 }
 
 module.exports = actions
