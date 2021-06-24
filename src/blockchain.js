@@ -18,14 +18,15 @@ class Blockchain {
   mine() {
     if (!this.verifyBlockchain()) {
       console.log('区块链不合法')
-      return
+      return null;
     }
     const newBlock = this.generateNewBlock()
     if (!this.verifyBlock(newBlock)) {
       console.log('区块不合法')
-      return;
+      return null;
     }
     this.blockchain.push(newBlock)
+    return newBlock
   }
   generateNewBlock() {
     const index = this.blockchain.length
@@ -63,9 +64,6 @@ class Blockchain {
       }
       const tempHash = this.sha256Hash(block.index + block.prevHash + JSON.stringify(block.data) + block.timestamp + block.nonce)
       if (tempHash !== block.hash) {
-        return false
-      }
-      if (block.hash.slice(0, this.difficulty) !== '0'.repeat(this.difficulty)) {
         return false
       }
     }
