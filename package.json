@@ -22,7 +22,6 @@
   "homepage": "https://github.com/czl0325/blockchain-start#readme",
   "dependencies": {
     "cli-table": "^0.3.6",
-    "nodemon": "^2.0.7",
     "vorpal": "^1.12.0"
   },
   "devDependencies": {}

@@ -1,11 +1,12 @@
 const Blockchain = require('./blockchain.js')
+const { beautifulLog } = require('./utils.js')
 
 const blockchain = new Blockchain()
 blockchain.generateNewBlock()
 
 
 function actions(vorpal) {
-  vorpal.use(mineCommand).delimiter('blockchain => ')
+  vorpal.use(mineCommand).delimiter('区块链 => ')
     .show()
 }
 
@@ -14,11 +15,12 @@ function mineCommand(vorpal) {
     .action(function (args, callback) {
       try {
         const block = blockchain.mine()
+        console.log(block)
         if (block) {
-          console.log(block)
+          beautifulLog(block)
         }
       } catch (e) {
-
+        console.log(e)
       } finally {
         callback()
       }
