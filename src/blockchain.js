@@ -15,6 +15,7 @@ class Blockchain {
     this.data = []
     this.difficulty = 4
   }
+  // 挖矿
   mine() {
     if (!this.verifyBlockchain()) {
       console.log('区块链不合法')
@@ -28,6 +29,11 @@ class Blockchain {
     this.blockchain.push(newBlock)
     return newBlock
   }
+  // 转账
+  transfer(from, to, amount) {
+
+  }
+  // 生成新区块
   generateNewBlock() {
     const index = this.blockchain.length
     const prevBlock = this.blockchain[this.blockchain.length-1]
@@ -50,6 +56,7 @@ class Blockchain {
       nonce
     }
   }
+  // 校验区块
   verifyBlock(block) {
     if (block.index > 0) {
       const prevBlock = this.blockchain[this.blockchain.length-1]
@@ -69,6 +76,7 @@ class Blockchain {
     }
     return true
   }
+  // 校验区块链
   verifyBlockchain(blockchain = this.blockchain) {
     for (let i = blockchain.length - 1;i>1;i--) {
       const block = blockchain[i]

@@ -6,7 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="c445399f-fa1f-4f8f-bcd6-b30383da408e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/blockchain.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/blockchain.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +41,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="javascript.nodejs.core.library.configured.version" value="14.16.1" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.17.4" />
+    <property name="javascript.nodejs.core.library.configured.version" value="16.5.0" />
+    <property name="javascript.nodejs.core.library.typings.version" value="16.7.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -71,6 +75,8 @@
       <updated>1624432885203</updated>
       <workItem from="1624432888459" duration="6168000" />
       <workItem from="1624507815298" duration="7549000" />
+      <workItem from="1625478609442" duration="446000" />
+      <workItem from="1630374332073" duration="3743000" />
     </task>
     <servers />
   </component>

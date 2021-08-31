@@ -17,7 +17,6 @@ function mineCommand(vorpal) {
     .action(function (args, callback) {
       try {
         const block = blockchain.mine()
-        console.log(block)
         if (block) {
           beautifulLog(block)
         }
@@ -29,8 +28,26 @@ function mineCommand(vorpal) {
     })
 }
 
-function blockchainCommand() {
+function blockchainCommand(vorpal) {
+  vorpal.command('blockchain', '查看整条区块链[bc]')
+    .alias('bc')
+    .action(function (args, callback) {
+      beautifulLog(blockchain.blockchain)
+      callback()
+    })
+}
 
+function transferCommand(vorpal) {
+  vorpal.command('trans <to> <amount>', '给他人转账')
+    .action(function (args, callback) {
+      try {
+
+      } catch (e) {
+        console.log(e)
+      } finally {
+        callback()
+      }
+    })
 }
 
 module.exports = actions
